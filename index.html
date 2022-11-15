@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/main.min.css" rel="stylesheet" />
+    <title>Simple calculator</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="calculator">
+        <div class="calculator__output">
+          <div data-previous-operand class="calculator__previous-operand"></div>
+          <div data-current-operand class="calculator__current-operand"></div>
+        </div>
+        <div class="calculator__box">
+          <div class="calculator__numbers">
+            <button data-number class="calculator__digit">7</button>
+            <button data-number class="calculator__digit">8</button>
+            <button data-number class="calculator__digit">9</button>
+            <button data-number class="calculator__digit">4</button>
+            <button data-number class="calculator__digit">5</button>
+            <button data-number class="calculator__digit">6</button>
+            <button data-number class="calculator__digit">1</button>
+            <button data-number class="calculator__digit">2</button>
+            <button data-number class="calculator__digit">3</button>
+            <button data-number class="calculator__digit">.</button>
+            <button data-number class="calculator__digit">0</button>
+          </div>
+          <div class="calculator__operations">
+            <button data-all-clear class="calculator__operation">AC</button>
+            <button data-delete class="calculator__operation">DEL</button>
+            <button data-operation class="calculator__operation">÷</button>
+            <button data-operation class="calculator__operation">*</button>
+            <button data-operation class="calculator__operation">+</button>
+            <button data-operation class="calculator__operation">-</button>
+            <button data-equals class="calculator__operation">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>
