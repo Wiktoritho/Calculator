@@ -1,0 +1,80 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.calculator {
+  background-color: #4e4f50;
+  border-radius: 10%;
+  width: 500px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-size: 35px;
+  box-shadow: 100px 4px 4px rgba(0, 0, 0, 0.15);
+  &__output {
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    margin: 30px 0 60px 0;
+  }
+  &__previous-operand {
+    height: 30%;
+  }
+  &__current-operand {
+    height: 70%;
+  }
+  &__box {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    gap: 10px;
+  }
+  &__numbers,
+  &__operations {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  &__digit {
+    width: calc(100% / 3);
+    font-size: 30px;
+    background-color: #ffe0e9;
+
+  }
+  &__digit:last-child {
+    width: calc(100% * 2 / 3);
+  }
+  &__operation {
+    width: calc(100% / 2);
+    font-size: 30px;
+        background-color: #ffe0e9;
+  }
+  &__operation:last-child {
+    width: 100%;
+    background-color: #e14f76;
+    color: white;
+  }
+  &__operation:first-child {
+    background-color: #e14f76;
+    color: white;
+  }
+  &__digit:hover,
+  &__operation:hover {
+    cursor: pointer;
+    background-color: #c96e86;
+    color: white;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms
+  }
+  &__operation:last-child:hover, 
+  &__operation:first-child:hover{
+    background-color: #a6a6a6;
+    color: black;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms
+  }
+
+}
