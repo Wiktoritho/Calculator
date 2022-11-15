@@ -1,3 +1,3 @@
-# simple_calc
-Just a simple calculator.
+# Calculator
+Just a calculator.
 Enjoy!
